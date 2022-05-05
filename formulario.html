@@ -1,0 +1,110 @@
+<!DOCTYPE html> 
+<html lang="pt-BR">
+    <head>    
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <title> Formulário em HTML </title>
+    </head>
+    <body>
+        <form action="#" method="get" target="_blank" autocomplete="off" >   
+                                            <!-- Início do bloco do formulário (containner), o argumento action
+                                            indica para onde vão os dados do formulário. O atributo target blank
+                                            foi colocado somente para estudo da dinâmica de envio do formulário.
+                                            -->
+            <!-- Um exemplo de segmentação de campos de um formulário -->        
+            <section>
+                <h1>Título do formulário.</h1>
+                <p>Formulário teste.</p>
+                <fieldset> 
+                    <legend>Descrição</legend>
+                    <p>
+                        <label>
+                            Nome:
+                            <input type="text">
+                        </label>
+                    </p>
+                </fieldset>
+            </section>    
+
+            <p>
+            <!-- Agora veremos tipos de inputs -->
+            <input type="text" name="fnome" placeholder="Seu nome" required>    <!--Para campos do tipo texto -->
+            <br>
+            <input type="checkbox" name="fdesenvolvedor"  value="sim" checked>   <!--Estilo caixa de seleção -->
+            <br>
+
+            <!--Estilo radiobox, observe que possuem a  mesma proriedade name-->
+            <input type="radio" name="fsexo"  value="masculino"> 
+            <br>
+            <input type="radio" name="fsexo"  value="feminino" >  
+            <br>
+
+            <!-- Tipo data e tempo -->
+            <input type="date" name="fdata">
+            <br>
+            <input type="time" name="fhora">
+            <br>
+
+            <input type="email" name="femail" placeholder="login@servidor.com">    <!--Para campos do tipo email -->
+            <br>
+
+            <!--Para campos numéricos inteiros-->
+            <input type="number" name="fnumero" min="10" max="20">         
+            <br>
+
+            <!-- Tipo senha -->
+            <input type="password" name="fsenha" placeholder="Digite sua senha">
+            <br>
+
+            <!--Entrada de dados do tipo seleçao - ComboBox -->
+            <select>
+                <option value="valor_1" label="Opção 1">
+                <option value="valor_2" label="Opção 2" selected>
+                <option value="valor_3" label="Opção 3">
+            </select>
+            <br>
+
+            <!--Entrada de dados do lista de seleçao - ListBox 
+            Podendo ser selecionada mais de uma opção com shift ou ctrl-->
+            <select multiple>
+                <option value="valor_1" label="Opção 1">
+                <option value="valor_2" label="Opção 2" selected>
+                <option value="valor_3" label="Opção 3">
+            </select>
+            <br>
+        
+            <!--Entrada para texto multilinha -->
+            <textarea name="ftexto" rows="8" cols="20"></textarea>
+
+            </p>
+
+            <p>
+                <!--Observe que os botões estão dentro da tag form -->
+                <button type="submit">ENVIAR</button>
+                <button type="reset">Limpar</button>
+            </p>
+            
+        </form>   
+    </body>
+</html>
+
+<!--
+Observações:
+
+Documentação para campos do formulário html:
+https://www.w3schools.com/html/html_form_input_types.asp
+Semântica dos formulários html:
+https://developer.mozilla.org/pt-BR/docs/Learn/Forms/How_to_structure_a_web_form
+
+Dentro de um formulário é possível outras tags como de cabeçalho, seção e agrupamento
+de campos.
+
+Os inputs possuem a propriedade value, o conteúdo de value será enviado para o servidor
+na finalização do formulário. A proriedade readonly deixa o input somente leitura.
+O atributo name segue para o backend no envio. Requared é utilizado para que o campo não
+fique em branco.
+
+No input tipo checkbox quando marcado é enviado para o servidor o conteúdo de value.
+
+O tipo numérico também aceita o placeholder.
+-->

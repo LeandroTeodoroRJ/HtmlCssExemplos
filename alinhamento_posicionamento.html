@@ -1,0 +1,63 @@
+<!DOCTYPE html> 
+<html lang="pt-BR">
+    <head>  
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Alinhamento e Posicionamento em CSS </title>
+    </head>
+    <body>
+        <div style="
+        width: 240px;
+        height: 240px;
+        background: red;
+        display: flex;
+        ">
+
+            <div style="
+            width: 60px;
+            height: 60px;
+            background: blue; 
+            margin: 15px 10px 0px 0px;
+            "></div>
+
+            <div style="
+            width: 60px;
+            height: 60px;
+            background: yellow;
+            border: 5px solid black;
+            box-sizing: border-box;
+            "></div>
+
+            <div style="
+            width: 60px;
+            height: 60px;
+            background: brown;
+            "></div>
+
+            <div style="
+            width: 60px;
+            height: 60px;
+            background: purple;
+            border: 5px solid black;
+            "></div>
+        </div>
+    </body>
+</html>
+
+<!-- 
+Observações:
+O código CSS está na Tag do elemento para facilitar o entendimento.
+Existem outras opções de medidas além do pixel, como porcentagem.
+Algumas propriedades do CSS
+    display: flex - Deixa os elementos do containner suspensos
+    margin - É o distanciamento do objeto do seu container, recebe
+        os argumentos top  left bottom right (sentido horário)
+    padding - Com essa propriedade é possível expandir a caixa
+        porém sem afetar a resolução do conteúdo (content box).
+        O paddin recebe a ordem dos argumentos igual a margin.
+    box-sizing: border-box - Ao invés de a caixa se expandir
+        com a adição do padding e border ela mantém o mesmo 
+        tamanho definidos nas propriedades de altura e largura.
+De dentro da caixa para fora temos as seguintes propriedade:
+width e height(content edge); paddin; border; margin.
+-->
