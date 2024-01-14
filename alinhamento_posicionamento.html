@@ -10,8 +10,8 @@
         width: 240px;
         height: 240px;
         background: red;
-        display: flex;
-        ">
+        display: flex; 
+        "> <!--display: flex - Deixa os elementos do containner suspensos -->
 
             <div style="
             width: 60px;
@@ -38,6 +38,7 @@
             width: 60px;
             height: 60px;
             background: purple;
+            padding: 10px; /* Padding: preenchimento entre o content e a borda.  */
             border: 5px solid black;
             "></div>
         </div>
@@ -49,9 +50,8 @@ Observações:
 O código CSS está na Tag do elemento para facilitar o entendimento.
 Existem outras opções de medidas além do pixel, como porcentagem.
 Algumas propriedades do CSS
-    display: flex - Deixa os elementos do containner suspensos
     margin - É o distanciamento do objeto do seu container, recebe
-        os argumentos top  left bottom right (sentido horário)
+        os argumentos top, left, bottom, right (sentido horário)
     padding - Com essa propriedade é possível expandir a caixa
         porém sem afetar a resolução do conteúdo (content box).
         O paddin recebe a ordem dos argumentos igual a margin.

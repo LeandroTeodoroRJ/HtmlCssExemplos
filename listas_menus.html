@@ -1,0 +1,85 @@
+<!DOCTYPE html>  
+<html lang="pt-BR">
+
+<head>      
+    <meta charset="utf-8">         
+    <meta name="viewport" content="width=device-width, initial-scale=1">                                                                           
+    <title> Listas e Menus </title>
+<style>
+
+/* Aplica para todos os itens */
+/*
+* {  
+    margin: 0;
+    padding: 0;
+}
+*/
+
+nav{
+    display: flex;
+//    height: 50px;
+    background: rgba(0, 0, 0, 0.8);
+//    justify-content: center;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+//    background: red;
+    list-style-type: none;  /* Retira as marcações da lista */
+    margin-left: 10px;
+
+}
+
+nav ul li a{  /* Caminho completo o "a" dentro do "nav" */
+    color: #ffffff;
+    text-decoration: none;
+    font-family: sans-serif;
+    padding: 10px 20px;
+    display: block;   /* Transforma inline para block */
+}
+
+/* Evento mouse over */
+nav a:hover{
+    background: rgba(0, 0, 0, 0.1);
+//    background: black;
+}
+
+</style>
+</head>
+
+<body>
+    <ul>    <!-- Lista não ordenada -->
+        <li>Item 1</li> <!-- item de lista -->
+        <li>Item 2</li>
+    </ul>
+
+    <ol>    <!-- Lista ordenada -->
+        <li>Item 1</li> <!-- item de lista -->
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <!-- O atributo type pode ser a, A, i, I, 1   -->
+    <!-- Com o atributo start = "20", por exemplo, começa do número 20 -->
+    <ol type="a">
+        <li>Item 1</li> <!-- item de lista -->
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <dl> <!-- Lista com descrição -->
+        <dt> Café </dt> <!-- Item da lista -->
+        <dd> bebida escura quente</dd> <!-- Descrição do item -->
+    </dl>
+
+    <nav>  <!-- Tag de navegação ou menu -->
+        <ul>
+            <li><a href="#">Opção-1</a></li>
+            <li><a href="#">Opção-2</a></li>
+            <li><a href="#">Opção-3</a></li>
+         </ul>
+    </nav>
+
+</body>
+</html>
