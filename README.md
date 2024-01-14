@@ -11,7 +11,7 @@ formatacao_simples_de_texto.thml  :: Inserir link, tags de títulos, negrito, it
 inserir_imagem.html  ::  Informações para inserir uma imagem no html.\
 listas_menus.html :: Diferenças entre tipos de listas e tag nav.\
 linkar_arquivo.html  ::  Como utilizar o estilo em outro arquivo css separado.\
-    estilo.css  ::  Arquivo de estilo separado.
+> estilo.css  ::  Arquivo de estilo separado.
 
 ## Outros Links
 Para validar o código html e checagem de erros: [Validador W3](https://validator.w3.org/).\
