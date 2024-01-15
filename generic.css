@@ -1,0 +1,12 @@
+/* Definições de estilo Genéricas */
+
+/*
+**  rox - Responsive overflow x
+**  Insere barra de rolagem horizontal se o elemento ultrapassar a tela.
+*/
+
+
+rox{
+    max-width: 100%;
+    overflow-x: auto;
+}

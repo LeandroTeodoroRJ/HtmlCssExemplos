@@ -1,0 +1,70 @@
+<!DOCTYPE html>  
+<html lang="pt-BR">
+
+<head>      
+    <meta charset="utf-8">         
+    <meta name="viewport" content="width=device-width, initial-scale=1">                                                                           
+    <title> Utilizando tabelas. </title>
+<style>
+
+table{
+    margin: 20px;
+    border-collapse: collapse;  /* Sem espaçamento entre as bordas as células */
+    width: 800px;
+}
+
+table caption{
+    caption-side: top;
+    text-align: left;
+    font-style: italic;
+    font-size: 14px;
+}
+
+table td, table th{   /* Seleciona todas as td e th da tabela */
+    border: 1px solid gray;
+    padding: 5px;
+    text-align: left;
+}
+
+tfoot td{
+    background: #ddd;
+}
+
+</style>
+</head>
+
+<body>
+    <table>
+        <caption> Uma descrição para a tabela. </caption>  
+        <thead>
+            <tr>  <!-- Linha do head de tabela -->
+                <th> Título 1 </th> <!-- Título da coluna 1 -->
+                <th> Título 2 </th>
+                <th> Título 3 </th>
+            </tr>
+        </thead>
+        <tbody>  <!-- Corpo da tabela, deve ter mesmo número de colunas do thead -->
+            <tr> <!-- Linha 1 do corpo da tabela -->
+                <td> Corpo 1</td>  <!-- Coluna 1 -->
+                <td> Corpo 2</td>  <!-- Coluna 2 -->
+                <td> Corpo 3</td>  <!-- Coluna 3 -->
+            </tr>
+            <tr> 
+                <td colspan="2"> Corpo 4</td> <!-- Marge cells --> 
+                <td rowspan="2"> Corpo 5</td>  
+            </tr>
+            <tr> 
+                <td> Corpo 6</td>  <!-- Coluna 1 -->
+                <td> Corpo 7</td>  <!-- Coluna 2 -->
+            </tr>
+        </tbody>
+        <tfoot>  <!-- Rodapé da tabela -->
+            <tr>  <!-- Linha do rodapé da tabela -->
+                <td> Nota 1 </td> <!-- Colunas do rodapé -->
+                <td> Nota 2 </td>
+                <td> Nota 3 </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

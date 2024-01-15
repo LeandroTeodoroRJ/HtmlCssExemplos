@@ -6,54 +6,78 @@
         <title> Formulário em HTML </title>
     </head>
     <body>
+
+        <!-- 
+        Início do bloco do formulário (containner), o argumento action
+        indica para onde vão os dados do formulário. O atributo target blank
+        foi colocado somente para estudo da dinâmica de envio do formulário.
+        -->
         <form action="#" method="get" target="_blank" autocomplete="off" >   
-                                            <!-- Início do bloco do formulário (containner), o argumento action
-                                            indica para onde vão os dados do formulário. O atributo target blank
-                                            foi colocado somente para estudo da dinâmica de envio do formulário.
-                                            -->
             <!-- Um exemplo de segmentação de campos de um formulário -->        
             <section>
                 <h1>Título do formulário.</h1>
                 <p>Formulário teste.</p>
-                <fieldset> 
+                <fieldset> <!-- Para criar um grupo de campos -->
                     <legend>Descrição</legend>
                     <p>
                         <label>
                             Nome:
                             <input type="text">
-                        </label>
+                        </label> <!-- Input dentro do label -->
                     </p>
                 </fieldset>
             </section>    
 
             <p>
             <!-- Agora veremos tipos de inputs -->
-            <input type="text" name="fnome" placeholder="Seu nome" required>    <!--Para campos do tipo texto -->
+            <!-- Estilo de entrada de texto genérico -->
+            <label for="frnome">Seu nome aqui:</label> <!-- Label clicável -->
+            <!-- Campos com inputs required não podem ser enviados em branco -->
+            <input type="text" id="frnome" name="fnome" placeholder="Seu nome" required>    <!--Para campos do tipo texto -->
             <br>
-            <input type="checkbox" name="fdesenvolvedor"  value="sim" checked>   <!--Estilo caixa de seleção -->
+
+            <!--Estilo caixa de seleção -->
+            <!-- Parâmetro cheked informa que o input já vem marcado -->
+            <label>Sou Dev:
+            <input type="checkbox" name="fdesenvolvedor"  value="sim" checked>   
+            <br>
+            </label>
             <br>
 
             <!--Estilo radiobox, observe que possuem a  mesma proriedade name-->
-            <input type="radio" name="fsexo"  value="masculino"> 
+            Gênero <br>
+            <label> Masc </label>
+            <input type="radio" name="fsexo"  value="masculino">
             <br>
-            <input type="radio" name="fsexo"  value="feminino" >  
+            <label> Fem  </label>
+            <input type="radio" name="fsexo"  value="feminino" >
+            <br>
             <br>
 
             <!-- Tipo data e tempo -->
+            <label> Data: <br>
             <input type="date" name="fdata">
             <br>
             <input type="time" name="fhora">
             <br>
+            </label>
+            <br>
 
-            <input type="email" name="femail" placeholder="login@servidor.com">    <!--Para campos do tipo email -->
+            <!--Para campos do tipo email -->
+            <label> E-mail: <br>
+            <input type="email" name="femail" placeholder="login@servidor.com">    
+            <br>
+            </label>
             <br>
 
             <!--Para campos numéricos inteiros-->
             <input type="number" name="fnumero" min="10" max="20">         
             <br>
+            <br>         
 
             <!-- Tipo senha -->
             <input type="password" name="fsenha" placeholder="Digite sua senha">
+            <br>
             <br>
 
             <!--Entrada de dados do tipo seleçao - ComboBox -->
@@ -62,6 +86,7 @@
                 <option value="valor_2" label="Opção 2" selected>
                 <option value="valor_3" label="Opção 3">
             </select>
+            <br>
             <br>
 
             <!--Entrada de dados do lista de seleçao - ListBox 
@@ -72,11 +97,12 @@
                 <option value="valor_3" label="Opção 3">
             </select>
             <br>
+            <br>
         
             <!--Entrada para texto multilinha -->
             <textarea name="ftexto" rows="8" cols="20"></textarea>
-
-            </p>
+            <br>
+            <br>
 
             <p>
                 <!--Observe que os botões estão dentro da tag form -->

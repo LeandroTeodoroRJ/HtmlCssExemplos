@@ -11,9 +11,13 @@ formatacao_simples_de_texto.thml  :: Inserir link, tags de títulos, negrito, it
 inserir_imagem.html  ::  Informações para inserir uma imagem no html.\
 listas_menus.html :: Diferenças entre tipos de listas e tag nav.\
 linkar_arquivo.html  ::  Como utilizar o estilo em outro arquivo css separado.\
------ estilo.css  ::  Arquivo de estilo separado.
+----- estilo.css  ::  Arquivo de estilo separado.\
+tabelas.html  ::  Como utilizar as tabelas no HTML.\
+formulario.html  ::  Explicações sobre formularios e inputs.\
+generic.css  ::  Definições de estilo genéricas para CSS.
 
 ## Outros Links
 Para validar o código html e checagem de erros: [Validador W3](https://validator.w3.org/).\
 Box model: [Artigo](https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model).\
+HTML input types: [w3schools](https://www.w3schools.com/html/html_form_input_types.asp).\
 Documentação de referência para HTML e CSS: [MDN](https://developer.mozilla.org/en-US/).
