@@ -1,0 +1,35 @@
+<!DOCTYPE html>  
+<html lang="pt-BR">
+
+<head>      
+    <meta charset="utf-8">         
+    <meta name="viewport" content="width=device-width, initial-scale=1">                                                                           
+    <title> Título Superior </title>
+<style>
+.heading {  /* Efeito de transição de 300ms */
+    transition: all 300ms ease-in-out;
+}
+
+.heading:hover{  /* Mouse over */
+    background: red;
+}
+
+input:focus{  /* Input está ativo, selecionado */
+    background: rgba(256, 0, 0, 0.2);  
+}
+/* Veja as outras pseudo-classes no link da MDN */
+</style>
+</head>
+
+<body>
+    <h1 class="heading"> Título </h1>
+
+    <label> Data: <br>
+    <input type="date" name="fdata">  
+    <input type="time" name="fhora">
+    <br>
+    </label>
+    
+          
+</body>
+</html>
