@@ -1,0 +1,45 @@
+<!DOCTYPE html>  
+<html lang="pt-BR">
+
+<head>      
+    <meta charset="utf-8">         
+    <meta name="viewport" content="width=device-width, initial-scale=1">                                                                           
+    <title> FlexBox </title>
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container{    
+    background: yellow;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;  /* center , space-evenly */ 
+    align-items: stretch;  /* center , flex-start*/
+    flex-wrap: wrap;
+}
+
+.flex-item{
+    background: red;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+
+</style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="flex-item">Um</div>
+        <div class="flex-item">Dois</div>
+        <div class="flex-item">Três</div>
+        <div class="flex-item">Quatro</div>
+        <div class="flex-item">Cinco</div>
+    </div>
+</body>
+</html>

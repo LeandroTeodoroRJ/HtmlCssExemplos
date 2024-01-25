@@ -17,6 +17,8 @@ formulario.html  ::  Explicações sobre formularios e inputs.\
 pseudo_classes.html  ::  Explicações de como selecionar uma pseudo-classe ou eventos.\
 peseudo_elemento.html  ::  Criando um pseudo-elemento na página.\
 box_model.html  ::  Explicações sobre as propriedades do box-model.\
+flexbox.html  ::  Utilização do flex box.\
+grid.html  ::  Manipulando grids.\
 generic.css  ::  Definições de estilo genéricas para CSS.
 
 ## Outros Links
@@ -27,8 +29,10 @@ Lista das pseudo-classes: [MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS
 Documentação dos pseudo-elementos: [MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-elements).\
 Documentação de referência para HTML e CSS: [MDN](https://developer.mozilla.org/en-US/).\
 Unidades de medida do CSS: [w3schools](https://www.w3schools.com/cssref/css_units.php).\
-Utilizando Media Queries[MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_media_queries/Using_media_queries).
-
+Utilizando Media Queries: [MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_media_queries/Using_media_queries).\
+Flexbox: [MDN](https://developer.mozilla.org/pt-BR/docs/Learn/CSS/CSS_layout/Flexbox#um_aparte_no_modelo_flex).\
+Flexbox guide: [CSS-Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/).\
+Guia completo do grid: [CSS-Tricks](https://css-tricks.com/snippets/css/complete-guide-grid/).
 
 
 
